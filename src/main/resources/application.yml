@@ -3,8 +3,8 @@ server:
 spring:
   mail:
     host: smtp.qq.com
-    username: 你的邮箱账号
-    password: 你的邮箱密码
+    username: 你的QQ邮箱账号
+    password: 你的QQ邮箱授权密码
     port: 587
     properties:
       mail:
