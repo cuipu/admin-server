@@ -3,8 +3,8 @@ server:
 spring:
   mail:
     host: smtp.qq.com
-    username: 178555991@qq.com
-    password: booxksehmtnjbijb
+    username: 你的邮箱账号
+    password: 你的邮箱密码
     port: 587
     properties:
       mail:
@@ -27,8 +27,8 @@ spring:
             user.password: ${spring.security.user.password}
       notify:
         mail:
-          from: 178555991@qq.com
-          to: 250097795@qq.com
+          from: 
+          to: 
           # 配置是否启用邮件通知 false是不起用，可以自定义发送邮件和邮件内容
           enabled: true
 
