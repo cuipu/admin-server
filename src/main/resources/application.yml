@@ -1,0 +1,38 @@
+server:
+  port: 9090
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 178555991@qq.com
+    password: booxksehmtnjbijb
+    port: 587
+    properties:
+      mail:
+      smtp:
+      auth: true
+      starttls:
+      enable: true
+      required: true
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: SBA_ADMIN
+  boot:
+    admin:
+      client:
+        instance:
+          metadata:
+            # 这里是我们在 client 设置安全账户信息  步骤中设置的账密            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+      notify:
+        mail:
+          from: 178555991@qq.com
+          to: 250097795@qq.com
+          # 配置是否启用邮件通知 false是不起用，可以自定义发送邮件和邮件内容
+          enabled: true
+
+logging:
+  file: /application.log
+  pattern:
+    file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
