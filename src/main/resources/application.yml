@@ -27,7 +27,7 @@ spring:
             user.password: ${spring.security.user.password}
       notify:
         mail:
-          from: 发送邮件的邮箱
+          from: 发送邮件的邮箱，上面配好的邮箱地址
           to: 接收邮件的邮箱
           # 配置是否启用邮件通知 false是不起用，可以自定义发送邮件和邮件内容
           enabled: true
